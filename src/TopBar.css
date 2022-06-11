@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+.barTop {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 900;
+  margin: 0%;
+  padding: 0%;
+}
+.barTop > a {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.barTop__main {
+  background-color: #d9d9d9;
+  flex: 1;
+}
+.barTop__logo {
+  flex: 0.3;
+  background-color: #232323;
+}
+
+.leftBar {
+  position: fixed;
+  width: 74vh;
+  display: flex;
+  transform-origin: top left;
+  left: 10px;
+  bottom: 13vh;
+  transform: rotate(-90deg);
+}
+
+.leftBar > button {
+  font-size: 12px;
+  flex: 1;
+  border: none;
+  background-color: #fff;
+}
+
+.rightBar {
+  padding-left: 10vh;
+  height: 5vw;
+  position: fixed;
+  display: flex;
+  width: 90vh;
+  background-color: #232323;
+  transform: rotate(-90deg);
+  transform-origin: bottom right;
+  bottom: 90%;
+  right: 0;
+  z-index: 5888;
+  flex-flow: row-reverse;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.rightBar > button {
+  background-color: hsla(0, 0%, 85%, 0.33);
+  border: solid #fff;
+  border-width: 0.5px 1px 0px 1px;
+  flex: 1;
+}
